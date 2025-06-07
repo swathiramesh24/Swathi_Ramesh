@@ -1,0 +1,414 @@
+body{
+  background-color: black;
+  padding: 0px;
+  margin: 0%;
+  transition: 0.3s ease-in-out;
+}
+
+/*HOME PAGE STYLES*/
+.header-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.logo-image{
+  height: 90px;
+  width: 90px;
+}
+
+.header-content{
+  color: white;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.middle-section {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  color: white;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+
+.name{
+  font-family: "Playfair Display", sans-serif;
+  text-align: center;
+}
+
+.name1{
+  font-size: 70px;
+  margin-bottom: 0px;
+}
+
+.name2{
+  margin: 0px;
+  font-size: 90px;
+  color:bisque;
+  position: relative;
+}
+
+.name2{
+  font-size: 90px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color:crimson;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+
+.typing-text::before {
+  content: "Swathi";
+  animation: typing 6s steps(10) infinite;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes typing {
+  0% {
+    content: "Swathi";
+  }
+  25% {
+    content: "Web Designer";
+  }
+  50% {
+    content: "Student";
+  }
+  75% {
+    content: "FE Learner";
+  }
+  100% {
+    content: "Swathi";
+  }
+}
+
+
+.quotes{
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 160px;
+}
+
+
+/*ABOUT PAGE STYLES*/
+.about{
+  display: inline-block;
+  padding: 40px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.about:hover, .skill:hover{
+  color: crimson;
+}
+
+.highlight{
+  color: crimson;
+  font-weight: 600;
+}
+
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.about-myself{
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.my-photo img{
+  width: 500px;
+}
+
+
+/*RESPONSIVE STYLES*/
+@media(max-width:768px){
+
+  body{
+    display: flex;
+    align-items: center;
+  }
+
+  .header-section{
+    flex-direction: column;
+  }
+
+ .about{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .name .name1{
+    font-size: 30px;
+  }
+
+  .typing-text{
+    font-size: 50px;
+  }
+
+  .quote{
+    font-size: 40px;
+  }
+
+  .about-content{
+    flex-direction: column;
+  }
+
+  .my-projects{
+    flex-direction: column;
+  }
+
+  .my-skills{
+    flex-direction: column;
+    margin: 50px;
+  }
+}
+
+
+/*ICON STYLES*/
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.icons .link{
+  text-decoration: none;
+  background-color:gray;
+  margin: 0 10px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.icons .link:hover{
+  color: crimson;
+  background-color: white;
+}
+
+
+/*PROJECT PAGE STYLES*/
+.my-projects{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 70px;
+}
+
+.skycast, .youtube-clone, .movie-review-website{
+  background-color: rgb(59, 59, 59);
+  color: white;
+  height: 355px;
+  width: 270px;
+  border-radius: 15px;
+}
+
+.skycast img, .youtube-clone img, .movie-review-website img{
+  width: 260px;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.project-title{
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  margin-top: 0px;
+  font-weight: 900;
+  transition: 0.3s ease-in-out;
+}
+
+.project-title:hover{
+  color: crimson;
+}
+
+.project-description{
+  text-align: center;
+  padding: 8px;
+}
+
+.demo{
+  margin-left: 50px;
+  padding: 8px 12px 8px 12px;
+  border: none;
+  border-radius: 10px;
+  color: crimson;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.demo:hover{
+  background-color: crimson;
+  color:white;
+}
+
+.contact-page{
+  margin-top: 70px;
+  padding: 30px;
+}
+
+h1{
+  color: white;
+}
+
+.project-header-content{
+  color: white;
+}
+
+.footer-text{
+  color: #FFF;
+  font-family: "Playfair Display";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 30px;
+}
+
+
+/*SKILL SECTION STYLES*/
+.my-skills{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  vertical-align: top;
+}
+
+.technical-skills, .soft-skills{
+  background: linear-gradient(135deg, #141313, #1a1a1a);
+  height: auto;
+  width:500px;
+  line-height: 30px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+/*EXTRA CURRICULAR STYLES*/
+.activity-section{
+  background: linear-gradient(135deg, #3c3b3b, #383838);
+  border-radius: 20px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+.place{
+  margin-top: 0px;
+  color: white;
+}
+
+
+/*CONTACT PAGE STYLES*/
+.services{
+  margin-top: 30px;
+  width:90px;
+  height: 90px;
+  border-radius: 13px;
+  
+}
+
+.services{
+  background-color: crimson;
+  display: flex;
+  padding: 10px;
+  margin: 40px auto;
+  width: 300px;
+  height: 250px;
+  flex-direction: column;
+}
+
+.available{
+  font-size: 25px;
+  font-family: "Playfair Display";
+  margin-top: 5px;
+  color: beige;
+}
+
+ul{
+  color: beige;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+/*COMMON STYLES*/
+.about-me-heading{
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.about-me-heading:hover{
+  color: crimson;
+}
+
+.skill-heading{
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 0px;
+}
+
+.skill{
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: crimson;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor.text-hover {
+  transform: scale(3.2) translate(-50%, -50%);
+  background-color: white;
+}
